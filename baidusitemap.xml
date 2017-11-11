@@ -24,6 +24,26 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/10/30/testtest/</loc>
+    <lastmod>2017-11-11T10:51:35.216Z</lastmod>
+    <data>
+        <display>
+        <title>突破算法第11天-红黑树</title>
+        <pubTime>2017-10-30T14:35:37.000Z</pubTime>
+        
+        <tag>算法</tag>
+         
+         
+           
+             
+              <breadCrumb title="algorithm" url="http://yoursite.com/categories/algorithm/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/10/30/test/</loc>
     <lastmod>2017-11-11T10:11:21.864Z</lastmod>
     <data>
