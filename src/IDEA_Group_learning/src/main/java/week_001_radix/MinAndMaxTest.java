@@ -1,4 +1,4 @@
-package week_001;
+package week_001_radix;
 
 public class MinAndMaxTest {
     public static void main(String args[]){

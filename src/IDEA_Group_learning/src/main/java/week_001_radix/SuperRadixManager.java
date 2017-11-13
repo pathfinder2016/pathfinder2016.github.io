@@ -1,4 +1,4 @@
-package week_001;
+package week_001_radix;
 
 public class SuperRadixManager {
 
