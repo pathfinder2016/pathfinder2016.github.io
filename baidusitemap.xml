@@ -3,6 +3,27 @@
 
 
     
+    
+    
+  <url>
+    <loc>http://yoursite.com/2017/11/09/hello-world/</loc>
+    <lastmod>2017-11-12T02:10:12.351Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2017-11-09T00:44:52.630Z</pubTime>
+        
+        <tag>java_group</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
   <url>
     <loc>http://yoursite.com/2017/10/30/mike/</loc>
     <lastmod>2017-11-11T10:51:35.216Z</lastmod>
@@ -58,21 +79,6 @@
              
               <breadCrumb title="algorithm" url="http://yoursite.com/categories/algorithm/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/11/09/hello-world/</loc>
-    <lastmod>2017-11-09T00:44:52.633Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2017-11-09T00:44:52.630Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
