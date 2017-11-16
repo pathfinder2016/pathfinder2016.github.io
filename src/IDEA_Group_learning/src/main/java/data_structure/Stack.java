@@ -1,4 +1,4 @@
-package week_002_stack_calculator;
+package data_structure;
 
 import exception.StackEmptyException;
 
@@ -40,4 +40,6 @@ public class Stack<T> {
     public boolean isEmpty() {
         return top == 0;
     }
+
+
 }
