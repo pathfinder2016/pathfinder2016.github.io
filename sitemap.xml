@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2017/11/17/algorithm_introduce/</loc>
+    
+    <lastmod>2017-11-17T14:24:00.519Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/about/index.html</loc>
     
     <lastmod>2017-11-12T02:13:37.083Z</lastmod>

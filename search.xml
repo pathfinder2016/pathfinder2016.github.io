@@ -3,6 +3,59 @@
   
     
     <entry>
+      <title><![CDATA[Algorithm introduce]]></title>
+      <url>/2017/11/17/algorithm_introduce/</url>
+      <content type="html"><![CDATA[<p><strong> Algorithm introduce：</strong> <excerpt in="" index="" |="" 首页摘要=""><br>Algorithm introduce<br><a id="more"></a></excerpt></p>
+<p><the rest="" of="" contents="" |="" 余下全文=""></the></p>
+<h2 id="谈及数据结构需要考虑的问题："><a href="#谈及数据结构需要考虑的问题：" class="headerlink" title="谈及数据结构需要考虑的问题："></a>谈及数据结构需要考虑的问题：</h2><pre><code>为什么要引入这种数据结构？
+逻辑结构？
+存储结构？
+时间复杂度？
+空间复杂度？
+</code></pre><h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><ul>
+<li>指代的就是这种数据结构产生的背景</li>
+</ul>
+<h3 id="逻辑结构"><a href="#逻辑结构" class="headerlink" title="逻辑结构"></a>逻辑结构</h3><ul>
+<li>算法设计取决于逻辑结构</li>
+<li>按照逻辑结构进行划分，常见的数结构可以分为 <strong>线性结构</strong> 和 <strong>非线性结构</strong><ul>
+<li>线性结构 如线性表</li>
+<li>非线性结构如 集合（数据集合）、树（一对多）、图（多对多）</li>
+</ul>
+</li>
+<li>另外说明：树是一种特殊的图</li>
+</ul>
+<h3 id="存储结构"><a href="#存储结构" class="headerlink" title="存储结构"></a>存储结构</h3><ul>
+<li>算法的实现依赖于所采用的存储结构</li>
+<li>常见的存储结构有<pre><code>顺序存储： 优点：随机存取；                            缺点：产生碎片，不易扩容
+链式存储： 优点：充分利用存储单元；              缺点：存储指针消耗额外存储空间
+索引存储： 优点：检索速度极快；                     缺点：消耗存储空间存储索引表
+散列存储： 优点：检索、增减数据速度快；        缺点：散列函数可能存在冲突，解决冲突将消耗额外的时间和空间。
+</code></pre></li>
+</ul>
+<h3 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h3><ul>
+<li>理论：<pre><code>T(n): 算法中所有语句的频度之和，为算法规模 n 的一个函数
+O(n): 为了减少无关紧要的语句对算法时间复杂度的分析，取程序最深层循环内的语句作为时间复杂度分析，根据极限理论，当 n -&gt; 正无穷时，和 T(n) 同一个数量级；
+</code></pre></li>
+</ul>
+<h3 id="空间复杂度"><a href="#空间复杂度" class="headerlink" title="空间复杂度"></a>空间复杂度</h3><pre><code>在存储空间白菜价格的年代，请忽略空间复杂度。
+</code></pre>]]></content>
+      
+        <categories>
+            
+            <category> Algorithm </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Algorithm </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Hello World]]></title>
       <url>/2017/11/09/hello-world/</url>
       <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
@@ -20,6 +73,28 @@
         <tags>
             
             <tag> java_group </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[突破算法第11天-红黑树]]></title>
+      <url>/2017/10/30/test/</url>
+      <content type="html"><![CDATA[<p><strong> 突破算法第11天-红黑树：</strong> <excerpt in="" index="" |="" 首页摘要=""><br>红黑树<br><a id="more"></a></excerpt></p>
+<p><the rest="" of="" contents="" |="" 余下全文=""><br>正文……</the></p>
+]]></content>
+      
+        <categories>
+            
+            <category> algorithm </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 算法 </tag>
             
         </tags>
         
@@ -111,7 +186,7 @@
 <h2 id="关于收费"><a href="#关于收费" class="headerlink" title="关于收费"></a>关于收费</h2><p><strong>马克飞象</strong>为新用户提供 10 天的试用期，试用期过后需要<a href="maxiang.info/vip.html">续费</a>才能继续使用。未购买或者未及时续费，将不能同步新的笔记。之前保存过的笔记依然可以编辑。</p>
 <h2 id="反馈与建议"><a href="#反馈与建议" class="headerlink" title="反馈与建议"></a>反馈与建议</h2><ul>
 <li>微博：<a href="http://weibo.com/u/2788354117" target="_blank" rel="external">@马克飞象</a>，<a href="http://weibo.com/ggock" title="开发者个人账号" target="_blank" rel="external">@GGock</a></li>
-<li>邮箱：<a href="&#x6d;&#97;&#105;&#x6c;&#116;&#111;&#58;&#x68;&#117;&#115;&#116;&#x67;&#x6f;&#99;&#107;&#x40;&#103;&#x6d;&#97;&#x69;&#x6c;&#46;&#99;&#111;&#x6d;">&#x68;&#117;&#115;&#116;&#x67;&#x6f;&#99;&#107;&#x40;&#103;&#x6d;&#97;&#x69;&#x6c;&#46;&#99;&#111;&#x6d;</a></li>
+<li>邮箱：<a href="&#x6d;&#97;&#105;&#x6c;&#116;&#111;&#58;&#x68;&#117;&#x73;&#116;&#103;&#x6f;&#x63;&#107;&#64;&#103;&#109;&#x61;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#x6d;">&#x68;&#117;&#x73;&#116;&#103;&#x6f;&#x63;&#107;&#64;&#103;&#109;&#x61;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#x6d;</a></li>
 </ul>
 <hr>
 <p>感谢阅读这份帮助文档。请点击右上角，绑定印象笔记账号，开启全新的记录与分享体验吧。</p>
@@ -262,7 +337,7 @@
 <h2 id="关于收费"><a href="#关于收费" class="headerlink" title="关于收费"></a>关于收费</h2><p><strong>马克飞象</strong>为新用户提供 10 天的试用期，试用期过后需要<a href="maxiang.info/vip.html">续费</a>才能继续使用。未购买或者未及时续费，将不能同步新的笔记。之前保存过的笔记依然可以编辑。</p>
 <h2 id="反馈与建议"><a href="#反馈与建议" class="headerlink" title="反馈与建议"></a>反馈与建议</h2><ul>
 <li>微博：<a href="http://weibo.com/u/2788354117" target="_blank" rel="external">@马克飞象</a>，<a href="http://weibo.com/ggock" title="开发者个人账号" target="_blank" rel="external">@GGock</a></li>
-<li>邮箱：<a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#111;&#x3a;&#x68;&#x75;&#x73;&#116;&#103;&#111;&#x63;&#107;&#x40;&#x67;&#x6d;&#97;&#x69;&#x6c;&#46;&#99;&#111;&#109;">&#x68;&#x75;&#x73;&#116;&#103;&#111;&#x63;&#107;&#x40;&#x67;&#x6d;&#97;&#x69;&#x6c;&#46;&#99;&#111;&#109;</a></li>
+<li>邮箱：<a href="&#109;&#x61;&#x69;&#108;&#116;&#111;&#58;&#x68;&#117;&#115;&#116;&#x67;&#111;&#99;&#107;&#x40;&#x67;&#109;&#x61;&#x69;&#108;&#x2e;&#99;&#x6f;&#109;">&#x68;&#117;&#115;&#116;&#x67;&#111;&#99;&#107;&#x40;&#x67;&#109;&#x61;&#x69;&#108;&#x2e;&#99;&#x6f;&#109;</a></li>
 </ul>
 <hr>
 <p>感谢阅读这份帮助文档。请点击右上角，绑定印象笔记账号，开启全新的记录与分享体验吧。</p>
@@ -310,28 +385,6 @@
 <p>微博：@马克飞象，@GGock<br>邮箱：hustgock@gmail.com<br>感谢阅读这份帮助文档。请点击右上角，绑定印象笔记账号，开启全新的记录与分享体验吧。</p>
 <p>这是一个示例脚注。请查阅 MultiMarkdown 文档 关于脚注的说明。 限制： 印象笔记的笔记内容使用 ENML 格式，基于 HTML，但是不支持某些标签和属性，例如id，这就导致脚注和TOC无法正常点击。 ↩<br>     2096<br> 绑定 Evernote International 账号<br> 绑定印象笔记账号<br>当前文档<br> 恢复至上次同步状态<br> 删除文档<br> 导出…<br> 预览文档<br> 分享链接<br>系统<br> 设置<br> 下载桌面客户端<br> 下载离线Chrome App<br> 使用说明<br> 快捷帮助<br> 常见问题<br> 关于</p>
 <p>搜索文件</p>
-]]></content>
-      
-        <categories>
-            
-            <category> algorithm </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 算法 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[突破算法第11天-红黑树]]></title>
-      <url>/2017/10/30/test/</url>
-      <content type="html"><![CDATA[<p><strong> 突破算法第11天-红黑树：</strong> <excerpt in="" index="" |="" 首页摘要=""><br>红黑树<br><a id="more"></a></excerpt></p>
-<p><the rest="" of="" contents="" |="" 余下全文=""><br>正文……</the></p>
 ]]></content>
       
         <categories>
