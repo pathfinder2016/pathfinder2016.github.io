@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Welcome to here.">
 <meta property="og:description" content="由重构引出的State模式：">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-20T00:25:50.835Z">
+<meta property="og:updated_time" content="2017-11-20T00:28:18.212Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="由重构引出的State模式">
 <meta name="twitter:description" content="由重构引出的State模式：">
@@ -382,13 +382,9 @@
 5. State模式： 每个状态有着相应的行为。旋转开关
 6. 无用的StringValue.Of(****);
 7. 为什么要提供类型相关的行为？
-
-
-[link](http://www.cnblogs.com/java-my-life/archive/2012/06/08/2538146.html)
 </code></pre><h3 id="State模式"><a href="#State模式" class="headerlink" title="State模式"></a>State模式</h3><ul>
 <li>把所研究对象的行为包装在不同的 ==<strong>状态对象</strong>== 里。<br>具体<a href="http://www.cnblogs.com/java-my-life/archive/2012/06/08/2538146.html" target="_blank" rel="external">参考链接</a>。</li>
 <li>通过使用多态性原则，动态改变环境类Context的属性State的内容，使其从指向一个具体状态类指向另一个具体状态类，从而使环境类的行为request()由不同的具体状态类来执行。</li>
-<li></li>
 <li><p><strong>状态和行为</strong></p>
 <ul>
 <li><p>所谓对象的状态，通常指的就是对象实例的属性的值；而行为指的就是对象的功能，再具体点说，行为大多可以对应到方法上。</p>
