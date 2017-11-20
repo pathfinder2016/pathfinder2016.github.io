@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/11/17/algorithm_introduce/</loc>
+    <lastmod>2017-11-20T00:44:10.680Z</lastmod>
+    <data>
+        <display>
+        <title>Algorithm introduce</title>
+        <pubTime>2017-11-17T14:35:37.000Z</pubTime>
+        
+        <tag>Algorithm</tag>
+         
+         
+           
+             
+              <breadCrumb title="Algorithm" url="http://yoursite.com/categories/Algorithm/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/11/20/Refactor_mini_project/</loc>
     <lastmod>2017-11-20T00:28:18.212Z</lastmod>
     <data>
@@ -17,26 +37,6 @@
            
              
               <breadCrumb title="设计模式 重构" url="http://yoursite.com/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E9%87%8D%E6%9E%84/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/11/17/algorithm_introduce/</loc>
-    <lastmod>2017-11-17T14:39:23.167Z</lastmod>
-    <data>
-        <display>
-        <title>Algorithm introduce</title>
-        <pubTime>2017-11-17T14:35:37.000Z</pubTime>
-        
-        <tag>Algorithm</tag>
-         
-         
-           
-             
-              <breadCrumb title="Algorithm" url="http://yoursite.com/categories/Algorithm/"/>
           
         </display>
     </data>
