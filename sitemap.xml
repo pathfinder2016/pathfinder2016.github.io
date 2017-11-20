@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2017/11/20/Refactor_mini_project/</loc>
+    
+    <lastmod>2017-11-20T00:25:50.835Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/11/17/algorithm_introduce/</loc>
+    
+    <lastmod>2017-11-17T14:39:23.167Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2017/10/30/testtest/</loc>
     
     <lastmod>2017-11-17T14:31:20.398Z</lastmod>
@@ -19,13 +33,6 @@
     <loc>http://yoursite.com/2017/10/30/test/</loc>
     
     <lastmod>2017-11-17T14:28:39.922Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/11/17/algorithm_introduce/</loc>
-    
-    <lastmod>2017-11-17T14:25:58.908Z</lastmod>
     
   </url>
   
