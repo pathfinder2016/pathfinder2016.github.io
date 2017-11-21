@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="设计模式 重构," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -81,18 +81,21 @@
 
 
 
-<meta name="description" content="由重构引出的State模式：">
-<meta name="keywords" content="设计模式 重构">
+<meta name="description" content="[TOC] 步骤1. 先对 Customer 下手，抽出statement 2. 明确职责，分到具体的类 3. 利用查询函数 query method 来取代 totalAmount 和 frequentRentalPoints; 可以促成较为干净的设计，从而**减少冗长复杂的函数** 4. 参数是一个需要经常考虑的问题，如何尽量较少参数个数，如何尽量使参数更加的准确，而不是整一个类传过去。 5.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="由重构引出的State模式">
+<meta property="og:title" content="Welcome to here.">
 <meta property="og:url" content="http://yoursite.com/2017/11/20/Refactor_mini_project/index.html">
 <meta property="og:site_name" content="Welcome to here.">
-<meta property="og:description" content="由重构引出的State模式：">
+<meta property="og:description" content="[TOC] 步骤1. 先对 Customer 下手，抽出statement 2. 明确职责，分到具体的类 3. 利用查询函数 query method 来取代 totalAmount 和 frequentRentalPoints; 可以促成较为干净的设计，从而**减少冗长复杂的函数** 4. 参数是一个需要经常考虑的问题，如何尽量较少参数个数，如何尽量使参数更加的准确，而不是整一个类传过去。 5.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-20T00:28:18.212Z">
+<meta property="og:image" content="http://images2015.cnblogs.com/blog/341820/201605/341820-20160517224205513-2140701473.png">
+<meta property="og:image" content="http://images2015.cnblogs.com/blog/341820/201605/341820-20160517224206904-1331179765.png">
+<meta property="og:image" content="http://images2015.cnblogs.com/blog/341820/201605/341820-20160517224209716-1682890531.png">
+<meta property="og:updated_time" content="2017-11-21T00:18:17.536Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="由重构引出的State模式">
-<meta name="twitter:description" content="由重构引出的State模式：">
+<meta name="twitter:title" content="Welcome to here.">
+<meta name="twitter:description" content="[TOC] 步骤1. 先对 Customer 下手，抽出statement 2. 明确职责，分到具体的类 3. 利用查询函数 query method 来取代 totalAmount 和 frequentRentalPoints; 可以促成较为干净的设计，从而**减少冗长复杂的函数** 4. 参数是一个需要经常考虑的问题，如何尽量较少参数个数，如何尽量使参数更加的准确，而不是整一个类传过去。 5.">
+<meta name="twitter:image" content="http://images2015.cnblogs.com/blog/341820/201605/341820-20160517224205513-2140701473.png">
 
 
 
@@ -128,7 +131,7 @@
 
 
 
-  <title>由重构引出的State模式 | Welcome to here.</title>
+  <title> | Welcome to here.</title>
   
 
 
@@ -301,7 +304,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">由重构引出的State模式</h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -313,7 +316,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-20T08:30:37+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-20T08:23:43+08:00">
                 2017-11-20
               </time>
             
@@ -323,28 +326,6 @@
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/设计模式-重构/" itemprop="url" rel="index">
-                    <span itemprop="name">设计模式 重构</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -373,8 +354,7 @@
       
 
       
-        <p><strong> 由重构引出的State模式：</strong> <excerpt in="" index="" |="" 首页摘要=""><br><a id="more"></a></excerpt></p>
-<p><the rest="" of="" contents="" |="" 余下全文=""></the></p>
+        <p>[TOC]</p>
 <h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><pre><code>1. 先对 Customer 下手，抽出statement
 2. 明确职责，分到具体的类
 3. 利用查询函数 query method 来取代 totalAmount 和 frequentRentalPoints; 可以促成较为干净的设计，从而**减少冗长复杂的函数**
@@ -382,9 +362,13 @@
 5. State模式： 每个状态有着相应的行为。旋转开关
 6. 无用的StringValue.Of(****);
 7. 为什么要提供类型相关的行为？
+
+
+[link](http://www.cnblogs.com/java-my-life/archive/2012/06/08/2538146.html)
 </code></pre><h3 id="State模式"><a href="#State模式" class="headerlink" title="State模式"></a>State模式</h3><ul>
 <li>把所研究对象的行为包装在不同的 ==<strong>状态对象</strong>== 里。<br>具体<a href="http://www.cnblogs.com/java-my-life/archive/2012/06/08/2538146.html" target="_blank" rel="external">参考链接</a>。</li>
 <li>通过使用多态性原则，动态改变环境类Context的属性State的内容，使其从指向一个具体状态类指向另一个具体状态类，从而使环境类的行为request()由不同的具体状态类来执行。</li>
+<li></li>
 <li><p><strong>状态和行为</strong></p>
 <ul>
 <li><p>所谓对象的状态，通常指的就是对象实例的属性的值；而行为指的就是对象的功能，再具体点说，行为大多可以对应到方法上。</p>
@@ -408,6 +392,23 @@
 </ul>
 </li>
 </ul>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul>
+<li>对于不涉及IO操作的循环，如果有职责单一原则或者代码更加清晰的需要，可以将循环根据职责分开，会存在平衡增加了若干循环的问题，但是由于不涉及IO操作，单纯在内容中循环，这种性能问题是可以接受的。</li>
+<li>策略模式</li>
+</ul>
+<h2 id="策略模式"><a href="#策略模式" class="headerlink" title="策略模式"></a><a href="http://www.cnblogs.com/keepfool/p/5503516.html" target="_blank" rel="external">策略模式</a></h2><pre><code>大多数的变化都会伴随着重复，这些重复的表现形式可能不一样，但是本质却是一样的。
+</code></pre><p><img src="http://images2015.cnblogs.com/blog/341820/201605/341820-20160517224205513-2140701473.png" alt="image"></p>
+<pre><code>在策略模式中，策略是由用户选择的，这意味着具体策略可能都要暴露给客户端，但是我们可以通过“分解依赖”来隐藏策略细节
+</code></pre><ul>
+<li>职责角度：运费算法是另外一个层面的职责</li>
+<li>代码角度：可维护行，可拓展性</li>
+</ul>
+<h3 id="何时使用？"><a href="#何时使用？" class="headerlink" title="何时使用？"></a>何时使用？</h3><p>策略模式定义<strong>一系列的算法</strong>，并将每一个算法<strong>封装</strong>起来，而且使他们还可以相互替换。</p>
+<p> 在策略模式中，算法是其中的变化点，<strong>策略模式让算法独立于使用它的客户而独立变化</strong>。</p>
+<p> Anyway, 不能使用多态的时候，不妨关注其中的某一个变化点，考虑采用策略模式。</p>
+<h4 id="重构前"><a href="#重构前" class="headerlink" title="重构前"></a>重构前</h4><p><img src="http://images2015.cnblogs.com/blog/341820/201605/341820-20160517224206904-1331179765.png" alt="image"></p>
+<h4 id="重构后"><a href="#重构后" class="headerlink" title="重构后"></a>重构后</h4><p><img src="http://images2015.cnblogs.com/blog/341820/201605/341820-20160517224209716-1682890531.png" alt="image"></p>
+<h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><p>关于策略模式与state模式的区别，后边阐述</p>
 
       
     </div>
@@ -422,12 +423,6 @@
     
 
     <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/设计模式-重构/" rel="tag"># 设计模式 重构</a>
-          
-        </div>
       
 
       
@@ -527,7 +522,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -538,7 +533,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -549,7 +544,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -591,7 +586,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#步骤"><span class="nav-number">1.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#State模式"><span class="nav-number">2.</span> <span class="nav-text">State模式</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#步骤"><span class="nav-number">1.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#State模式"><span class="nav-number">2.</span> <span class="nav-text">State模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#策略模式"><span class="nav-number"></span> <span class="nav-text">策略模式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#何时使用？"><span class="nav-number">1.</span> <span class="nav-text">何时使用？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#重构前"><span class="nav-number">1.1.</span> <span class="nav-text">重构前</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#重构后"><span class="nav-number">1.2.</span> <span class="nav-text">重构后</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后记"><span class="nav-number">2.</span> <span class="nav-text">后记</span></a></li></ol></div>
             
 
           </div>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-11-20T00:28:18.212Z</updated>
+  <updated>2017-11-21T00:18:17.536Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,24 +17,26 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>由重构引出的State模式</title>
+    <title></title>
     <link href="http://yoursite.com/2017/11/20/Refactor_mini_project/"/>
     <id>http://yoursite.com/2017/11/20/Refactor_mini_project/</id>
-    <published>2017-11-20T00:30:37.000Z</published>
-    <updated>2017-11-20T00:28:18.212Z</updated>
+    <published>2017-11-20T00:23:43.883Z</published>
+    <updated>2017-11-21T00:18:17.536Z</updated>
     
-    <content type="html"><![CDATA[<p><strong> 由重构引出的State模式：</strong> <excerpt in="" index="" |="" 首页摘要=""><br><a id="more"></a></excerpt></p><p><the rest="" of="" contents="" |="" 余下全文=""></the></p><h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><pre><code>1. 先对 Customer 下手，抽出statement2. 明确职责，分到具体的类3. 利用查询函数 query method 来取代 totalAmount 和 frequentRentalPoints; 可以促成较为干净的设计，从而**减少冗长复杂的函数**4. 参数是一个需要经常考虑的问题，如何尽量较少参数个数，如何尽量使参数更加的准确，而不是整一个类传过去。5. State模式： 每个状态有着相应的行为。旋转开关6. 无用的StringValue.Of(****);7. 为什么要提供类型相关的行为？</code></pre><h3 id="State模式"><a href="#State模式" class="headerlink" title="State模式"></a>State模式</h3><ul><li>把所研究对象的行为包装在不同的 ==<strong>状态对象</strong>== 里。<br>具体<a href="http://www.cnblogs.com/java-my-life/archive/2012/06/08/2538146.html" target="_blank" rel="external">参考链接</a>。</li><li>通过使用多态性原则，动态改变环境类Context的属性State的内容，使其从指向一个具体状态类指向另一个具体状态类，从而使环境类的行为request()由不同的具体状态类来执行。</li><li><p><strong>状态和行为</strong></p><ul><li><p>所谓对象的状态，通常指的就是对象实例的属性的值；而行为指的就是对象的功能，再具体点说，行为大多可以对应到方法上。</p></li><li><p>状态模式的功能就是分离状态的行为，通过维护状态的变化，来调用不同状态对应的不同功能。也就是说，状态和行为是相关联的，它们的关系可以描述为：==<strong>状态决定行为</strong>==。</p></li><li><p>由于状态是在运行期被改变的，因此行为也会在运行期根据状态的改变而改变。</p></li></ul></li><li><p><strong>行为的平行性</strong></p><ul><li>注意平行线而不是平等性。所谓平行性指的是各个状态的行为所处的层次是一样的，相互独立的、没有关联的，是根据不同的状态来决定到底走平行线的哪一条。行为是不同的，当然对应的实现也是不同的，相互之间是不可替换的。</li></ul></li><li><p><strong>环境和状态处理对象</strong></p><ul><li>在状态模式中，环境(Context)是持有状态的对象，但是环境(Context)自身并不处理跟状态相关的行为，而是把处理状态的功能委托给了状态对应的状态处理类来处理。</li><li>在具体的状态处理类中经常需要获取环境(Context)自身的数据，甚至在必要的时候会回调环境(Context)的方法，因此，通常将环境(Context)自身当作一个参数传递给具体的状态处理类。</li><li><strong>客户端一般只和环境(Context)交互</strong>。客户端可以用状态对象来配置一个环境(Context)，一旦配置完毕，就不再需要和状态对象打交道了。客户端通常不负责运行期间状态的维护，也不负责决定后续到底使用哪一个具体的状态处理对象。</li></ul></li></ul>]]></content>
+    <content type="html"><![CDATA[<p>[TOC]</p><h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><pre><code>1. 先对 Customer 下手，抽出statement2. 明确职责，分到具体的类3. 利用查询函数 query method 来取代 totalAmount 和 frequentRentalPoints; 可以促成较为干净的设计，从而**减少冗长复杂的函数**4. 参数是一个需要经常考虑的问题，如何尽量较少参数个数，如何尽量使参数更加的准确，而不是整一个类传过去。5. State模式： 每个状态有着相应的行为。旋转开关6. 无用的StringValue.Of(****);7. 为什么要提供类型相关的行为？[link](http://www.cnblogs.com/java-my-life/archive/2012/06/08/2538146.html)</code></pre><h3 id="State模式"><a href="#State模式" class="headerlink" title="State模式"></a>State模式</h3><ul><li>把所研究对象的行为包装在不同的 ==<strong>状态对象</strong>== 里。<br>具体<a href="http://www.cnblogs.com/java-my-life/archive/2012/06/08/2538146.html" target="_blank" rel="external">参考链接</a>。</li><li>通过使用多态性原则，动态改变环境类Context的属性State的内容，使其从指向一个具体状态类指向另一个具体状态类，从而使环境类的行为request()由不同的具体状态类来执行。</li><li></li><li><p><strong>状态和行为</strong></p><ul><li><p>所谓对象的状态，通常指的就是对象实例的属性的值；而行为指的就是对象的功能，再具体点说，行为大多可以对应到方法上。</p></li><li><p>状态模式的功能就是分离状态的行为，通过维护状态的变化，来调用不同状态对应的不同功能。也就是说，状态和行为是相关联的，它们的关系可以描述为：==<strong>状态决定行为</strong>==。</p></li><li><p>由于状态是在运行期被改变的，因此行为也会在运行期根据状态的改变而改变。</p></li></ul></li><li><p><strong>行为的平行性</strong></p><ul><li>注意平行线而不是平等性。所谓平行性指的是各个状态的行为所处的层次是一样的，相互独立的、没有关联的，是根据不同的状态来决定到底走平行线的哪一条。行为是不同的，当然对应的实现也是不同的，相互之间是不可替换的。</li></ul></li><li><p><strong>环境和状态处理对象</strong></p><ul><li>在状态模式中，环境(Context)是持有状态的对象，但是环境(Context)自身并不处理跟状态相关的行为，而是把处理状态的功能委托给了状态对应的状态处理类来处理。</li><li>在具体的状态处理类中经常需要获取环境(Context)自身的数据，甚至在必要的时候会回调环境(Context)的方法，因此，通常将环境(Context)自身当作一个参数传递给具体的状态处理类。</li><li><strong>客户端一般只和环境(Context)交互</strong>。客户端可以用状态对象来配置一个环境(Context)，一旦配置完毕，就不再需要和状态对象打交道了。客户端通常不负责运行期间状态的维护，也不负责决定后续到底使用哪一个具体的状态处理对象。</li></ul></li></ul><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul><li>对于不涉及IO操作的循环，如果有职责单一原则或者代码更加清晰的需要，可以将循环根据职责分开，会存在平衡增加了若干循环的问题，但是由于不涉及IO操作，单纯在内容中循环，这种性能问题是可以接受的。</li><li>策略模式</li></ul><h2 id="策略模式"><a href="#策略模式" class="headerlink" title="策略模式"></a><a href="http://www.cnblogs.com/keepfool/p/5503516.html" target="_blank" rel="external">策略模式</a></h2><pre><code>大多数的变化都会伴随着重复，这些重复的表现形式可能不一样，但是本质却是一样的。</code></pre><p><img src="http://images2015.cnblogs.com/blog/341820/201605/341820-20160517224205513-2140701473.png" alt="image"></p><pre><code>在策略模式中，策略是由用户选择的，这意味着具体策略可能都要暴露给客户端，但是我们可以通过“分解依赖”来隐藏策略细节</code></pre><ul><li>职责角度：运费算法是另外一个层面的职责</li><li>代码角度：可维护行，可拓展性</li></ul><h3 id="何时使用？"><a href="#何时使用？" class="headerlink" title="何时使用？"></a>何时使用？</h3><p>策略模式定义<strong>一系列的算法</strong>，并将每一个算法<strong>封装</strong>起来，而且使他们还可以相互替换。</p><p> 在策略模式中，算法是其中的变化点，<strong>策略模式让算法独立于使用它的客户而独立变化</strong>。</p><p> Anyway, 不能使用多态的时候，不妨关注其中的某一个变化点，考虑采用策略模式。</p><h4 id="重构前"><a href="#重构前" class="headerlink" title="重构前"></a>重构前</h4><p><img src="http://images2015.cnblogs.com/blog/341820/201605/341820-20160517224206904-1331179765.png" alt="image"></p><h4 id="重构后"><a href="#重构后" class="headerlink" title="重构后"></a>重构后</h4><p><img src="http://images2015.cnblogs.com/blog/341820/201605/341820-20160517224209716-1682890531.png" alt="image"></p><h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><p>关于策略模式与state模式的区别，后边阐述</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt; 由重构引出的State模式：&lt;/strong&gt; &lt;excerpt in=&quot;&quot; index=&quot;&quot; |=&quot;&quot; 首页摘要=&quot;&quot;&gt;&lt;br&gt;
+      
+      
+        &lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h3 id=&quot;步骤&quot;&gt;&lt;a href=&quot;#步骤&quot; class=&quot;headerlink&quot; title=&quot;步骤&quot;&gt;&lt;/a&gt;步骤&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;1. 先对 Customer 下手，抽出statement
+2. 明确职责，分到具体的类
+3. 利
+      
     
     </summary>
     
-      <category term="设计模式 重构" scheme="http://yoursite.com/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E9%87%8D%E6%9E%84/"/>
-    
-    
-      <category term="设计模式 重构" scheme="http://yoursite.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E9%87%8D%E6%9E%84/"/>
     
   </entry>
   
@@ -46,6 +48,28 @@
     <updated>2017-11-20T00:48:47.174Z</updated>
     
     <content type="html"><![CDATA[<p><strong> Algorithm introduce：</strong> <excerpt in="" index="" |="" 首页摘要=""><br><a id="more"></a></excerpt></p><p><the rest="" of="" contents="" |="" 余下全文=""></the></p><h2 id="谈及数据结构需要考虑的问题："><a href="#谈及数据结构需要考虑的问题：" class="headerlink" title="谈及数据结构需要考虑的问题："></a>谈及数据结构需要考虑的问题：</h2><ol><li>为什么要引入这种数据结构？</li><li>逻辑结构？</li><li>存储结构？</li><li>时间复杂度？</li><li>空间复杂度？</li></ol><h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><ul><li>指代的就是这种数据结构产生的背景</li></ul><h3 id="逻辑结构"><a href="#逻辑结构" class="headerlink" title="逻辑结构"></a>逻辑结构</h3><ul><li>算法设计取决于逻辑结构</li><li>按照逻辑结构进行划分，常见的数结构可以分为 <strong>线性结构</strong> 和 <strong>非线性结构</strong><ul><li>线性结构 如线性表</li><li>非线性结构如 集合（数据集合）、树（一对多）、图（多对多）</li></ul></li><li>另外说明：树是一种特殊的图</li></ul><h3 id="存储结构"><a href="#存储结构" class="headerlink" title="存储结构"></a>存储结构</h3><ul><li>算法的实现依赖于所采用的存储结构</li><li>常见的存储结构有</li></ul><ol><li>顺序存储： 优点：随机存取；                            缺点：产生碎片，不易扩容</li><li>链式存储： 优点：充分利用存储单元；              缺点：存储指针消耗额外存储空间</li><li>索引存储： 优点：检索速度极快；                     缺点：消耗存储空间存储索引表</li><li>散列存储： 优点：检索、增减数据速度快；        缺点：散列函数可能存在冲突，解决冲突将消耗额外的时间和空间。</li></ol><h3 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h3><ul><li>理论：</li></ul><ol><li>T(n): 算法中所有语句的频度之和，为算法规模 n 的一个函数</li><li>O(n): 为了减少无关紧要的语句对算法时间复杂度的分析，取程序最深层循环内的语句作为时间复杂度分析，根据极限理论，当 n -&gt; 正无穷时，和 T(n) 同一个数量级；</li></ol><h3 id="空间复杂度"><a href="#空间复杂度" class="headerlink" title="空间复杂度"></a>空间复杂度</h3><ol><li>在存储空间白菜价格的年代，请忽略空间复杂度。</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; Algorithm introduce：&lt;/strong&gt; &lt;excerpt in=&quot;&quot; index=&quot;&quot; |=&quot;&quot; 首页摘要=&quot;&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="Algorithm" scheme="http://yoursite.com/tags/Algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Algorithm introduce</title>
+    <link href="http://yoursite.com/2017/11/17/back/algorithem_introduce/"/>
+    <id>http://yoursite.com/2017/11/17/back/algorithem_introduce/</id>
+    <published>2017-11-17T14:35:37.000Z</published>
+    <updated>2017-11-20T00:51:32.144Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> Algorithm introduce：</strong> <excerpt in="" index="" |="" 首页摘要=""><br><a id="more"></a></excerpt></p><p><the rest="" of="" contents="" |="" 余下全文=""></the></p><h2 id="谈及数据结构需要考虑的问题："><a href="#谈及数据结构需要考虑的问题：" class="headerlink" title="谈及数据结构需要考虑的问题："></a>谈及数据结构需要考虑的问题：</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">为什么要引入这种数据结构？</span><br><span class="line">逻辑结构？</span><br><span class="line">存储结构？</span><br><span class="line">时间复杂度？</span><br><span class="line">空间复杂度？</span><br></pre></td></tr></table></figure><h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><ul><li>指代的就是这种数据结构产生的背景</li></ul><h3 id="逻辑结构"><a href="#逻辑结构" class="headerlink" title="逻辑结构"></a>逻辑结构</h3><ul><li>算法设计取决于逻辑结构</li><li>按照逻辑结构进行划分，常见的数结构可以分为 <strong>线性结构</strong> 和 <strong>非线性结构</strong><ul><li>线性结构 如线性表</li><li>非线性结构如 集合（数据集合）、树（一对多）、图（多对多）</li></ul></li><li>另外说明：树是一种特殊的图</li></ul><h3 id="存储结构"><a href="#存储结构" class="headerlink" title="存储结构"></a>存储结构</h3><ul><li>算法的实现依赖于所采用的存储结构</li><li>常见的存储结构有<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">顺序存储： 优点：随机存取；                            缺点：产生碎片，不易扩容</span><br><span class="line">链式存储： 优点：充分利用存储单元；              缺点：存储指针消耗额外存储空间</span><br><span class="line">索引存储： 优点：检索速度极快；                     缺点：消耗存储空间存储索引表</span><br><span class="line">散列存储： 优点：检索、增减数据速度快；        缺点：散列函数可能存在冲突，解决冲突将消耗额外的时间和空间。</span><br></pre></td></tr></table></figure></li></ul><h3 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h3><ul><li>理论：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">T(n): 算法中所有语句的频度之和，为算法规模 n 的一个函数</span><br><span class="line">O(n): 为了减少无关紧要的语句对算法时间复杂度的分析，取程序最深层循环内的语句作为时间复杂度分析，根据极限理论，当 n -&gt; 正无穷时，和 T(n) 同一个数量级；</span><br></pre></td></tr></table></figure></li></ul><h3 id="空间复杂度"><a href="#空间复杂度" class="headerlink" title="空间复杂度"></a>空间复杂度</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在存储空间白菜价格的年代，请忽略空间复杂度。</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -85,28 +109,6 @@
   
   <entry>
     <title>突破算法第11天-红黑树</title>
-    <link href="http://yoursite.com/2017/10/30/test/"/>
-    <id>http://yoursite.com/2017/10/30/test/</id>
-    <published>2017-10-30T14:35:37.000Z</published>
-    <updated>2017-11-17T14:28:39.922Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> 突破算法第11天-红黑树：</strong> <excerpt in="" index="" |="" 首页摘要=""><br>红黑树<br><a id="more"></a></excerpt></p><p><the rest="" of="" contents="" |="" 余下全文=""></the></p><h2 id="谈及数据结构需要考虑的问题："><a href="#谈及数据结构需要考虑的问题：" class="headerlink" title="谈及数据结构需要考虑的问题："></a>谈及数据结构需要考虑的问题：</h2><pre><code>为什么要引入这种数据结构？逻辑结构？存储结构？时间复杂度？空间复杂度？</code></pre><h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><ul><li>指代的就是这种数据结构产生的背景</li></ul><h3 id="逻辑结构"><a href="#逻辑结构" class="headerlink" title="逻辑结构"></a>逻辑结构</h3><ul><li>算法设计取决于逻辑结构</li><li>按照逻辑结构进行划分，常见的数结构可以分为 <strong>线性结构</strong> 和 <strong>非线性结构</strong><ul><li>线性结构 如线性表</li><li>非线性结构如 集合（数据集合）、树（一对多）、图（多对多）</li></ul></li><li>另外说明：树是一种特殊的图</li></ul><h3 id="存储结构"><a href="#存储结构" class="headerlink" title="存储结构"></a>存储结构</h3><ul><li>算法的实现依赖于所采用的存储结构</li><li>常见的存储结构有<pre><code>顺序存储： 优点：随机存取；                            缺点：产生碎片，不易扩容链式存储： 优点：充分利用存储单元；              缺点：存储指针消耗额外存储空间索引存储： 优点：检索速度极快；                     缺点：消耗存储空间存储索引表散列存储： 优点：检索、增减数据速度快；        缺点：散列函数可能存在冲突，解决冲突将消耗额外的时间和空间。</code></pre></li></ul><h3 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h3><ul><li>理论：<pre><code>T(n): 算法中所有语句的频度之和，为算法规模 n 的一个函数O(n): 为了减少无关紧要的语句对算法时间复杂度的分析，取程序最深层循环内的语句作为时间复杂度分析，根据极限理论，当 n -&gt; 正无穷时，和 T(n) 同一个数量级；</code></pre></li></ul><h3 id="空间复杂度"><a href="#空间复杂度" class="headerlink" title="空间复杂度"></a>空间复杂度</h3><pre><code>在存储空间白菜价格的年代，请忽略空间复杂度。</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; 突破算法第11天-红黑树：&lt;/strong&gt; &lt;excerpt in=&quot;&quot; index=&quot;&quot; |=&quot;&quot; 首页摘要=&quot;&quot;&gt;&lt;br&gt;红黑树&lt;br&gt;
-    
-    </summary>
-    
-      <category term="algorithm" scheme="http://yoursite.com/categories/algorithm/"/>
-    
-    
-      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>突破算法第11天-红黑树</title>
     <link href="http://yoursite.com/2017/10/30/testtest/"/>
     <id>http://yoursite.com/2017/10/30/testtest/</id>
     <published>2017-10-30T14:35:37.000Z</published>
@@ -133,6 +135,28 @@
     <id>http://yoursite.com/2017/10/30/mike/</id>
     <published>2017-10-30T14:35:37.000Z</published>
     <updated>2017-11-17T14:30:47.925Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> 突破算法第11天-红黑树：</strong> <excerpt in="" index="" |="" 首页摘要=""><br>红黑树<br><a id="more"></a></excerpt></p><p><the rest="" of="" contents="" |="" 余下全文=""></the></p><h2 id="谈及数据结构需要考虑的问题："><a href="#谈及数据结构需要考虑的问题：" class="headerlink" title="谈及数据结构需要考虑的问题："></a>谈及数据结构需要考虑的问题：</h2><pre><code>为什么要引入这种数据结构？逻辑结构？存储结构？时间复杂度？空间复杂度？</code></pre><h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><ul><li>指代的就是这种数据结构产生的背景</li></ul><h3 id="逻辑结构"><a href="#逻辑结构" class="headerlink" title="逻辑结构"></a>逻辑结构</h3><ul><li>算法设计取决于逻辑结构</li><li>按照逻辑结构进行划分，常见的数结构可以分为 <strong>线性结构</strong> 和 <strong>非线性结构</strong><ul><li>线性结构 如线性表</li><li>非线性结构如 集合（数据集合）、树（一对多）、图（多对多）</li></ul></li><li>另外说明：树是一种特殊的图</li></ul><h3 id="存储结构"><a href="#存储结构" class="headerlink" title="存储结构"></a>存储结构</h3><ul><li>算法的实现依赖于所采用的存储结构</li><li>常见的存储结构有<pre><code>顺序存储： 优点：随机存取；                            缺点：产生碎片，不易扩容链式存储： 优点：充分利用存储单元；              缺点：存储指针消耗额外存储空间索引存储： 优点：检索速度极快；                     缺点：消耗存储空间存储索引表散列存储： 优点：检索、增减数据速度快；        缺点：散列函数可能存在冲突，解决冲突将消耗额外的时间和空间。</code></pre></li></ul><h3 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h3><ul><li>理论：<pre><code>T(n): 算法中所有语句的频度之和，为算法规模 n 的一个函数O(n): 为了减少无关紧要的语句对算法时间复杂度的分析，取程序最深层循环内的语句作为时间复杂度分析，根据极限理论，当 n -&gt; 正无穷时，和 T(n) 同一个数量级；</code></pre></li></ul><h3 id="空间复杂度"><a href="#空间复杂度" class="headerlink" title="空间复杂度"></a>空间复杂度</h3><pre><code>在存储空间白菜价格的年代，请忽略空间复杂度。</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; 突破算法第11天-红黑树：&lt;/strong&gt; &lt;excerpt in=&quot;&quot; index=&quot;&quot; |=&quot;&quot; 首页摘要=&quot;&quot;&gt;&lt;br&gt;红黑树&lt;br&gt;
+    
+    </summary>
+    
+      <category term="algorithm" scheme="http://yoursite.com/categories/algorithm/"/>
+    
+    
+      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>突破算法第11天-红黑树</title>
+    <link href="http://yoursite.com/2017/10/30/test/"/>
+    <id>http://yoursite.com/2017/10/30/test/</id>
+    <published>2017-10-30T14:35:37.000Z</published>
+    <updated>2017-11-17T14:28:39.922Z</updated>
     
     <content type="html"><![CDATA[<p><strong> 突破算法第11天-红黑树：</strong> <excerpt in="" index="" |="" 首页摘要=""><br>红黑树<br><a id="more"></a></excerpt></p><p><the rest="" of="" contents="" |="" 余下全文=""></the></p><h2 id="谈及数据结构需要考虑的问题："><a href="#谈及数据结构需要考虑的问题：" class="headerlink" title="谈及数据结构需要考虑的问题："></a>谈及数据结构需要考虑的问题：</h2><pre><code>为什么要引入这种数据结构？逻辑结构？存储结构？时间复杂度？空间复杂度？</code></pre><h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><ul><li>指代的就是这种数据结构产生的背景</li></ul><h3 id="逻辑结构"><a href="#逻辑结构" class="headerlink" title="逻辑结构"></a>逻辑结构</h3><ul><li>算法设计取决于逻辑结构</li><li>按照逻辑结构进行划分，常见的数结构可以分为 <strong>线性结构</strong> 和 <strong>非线性结构</strong><ul><li>线性结构 如线性表</li><li>非线性结构如 集合（数据集合）、树（一对多）、图（多对多）</li></ul></li><li>另外说明：树是一种特殊的图</li></ul><h3 id="存储结构"><a href="#存储结构" class="headerlink" title="存储结构"></a>存储结构</h3><ul><li>算法的实现依赖于所采用的存储结构</li><li>常见的存储结构有<pre><code>顺序存储： 优点：随机存取；                            缺点：产生碎片，不易扩容链式存储： 优点：充分利用存储单元；              缺点：存储指针消耗额外存储空间索引存储： 优点：检索速度极快；                     缺点：消耗存储空间存储索引表散列存储： 优点：检索、增减数据速度快；        缺点：散列函数可能存在冲突，解决冲突将消耗额外的时间和空间。</code></pre></li></ul><h3 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h3><ul><li>理论：<pre><code>T(n): 算法中所有语句的频度之和，为算法规模 n 的一个函数O(n): 为了减少无关紧要的语句对算法时间复杂度的分析，取程序最深层循环内的语句作为时间复杂度分析，根据极限理论，当 n -&gt; 正无穷时，和 T(n) 同一个数量级；</code></pre></li></ul><h3 id="空间复杂度"><a href="#空间复杂度" class="headerlink" title="空间复杂度"></a>空间复杂度</h3><pre><code>在存储空间白菜价格的年代，请忽略空间复杂度。</code></pre>]]></content>
     
