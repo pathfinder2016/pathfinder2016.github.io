@@ -58,6 +58,7 @@ public class BinarySearchTreeTest {
 
         Assert.assertTrue(binarySearchTree.contains(1));
         Assert.assertTrue(binarySearchTree.contains(8));
+
         Assert.assertFalse(binarySearchTree.contains(0));
         Assert.assertFalse(binarySearchTree.contains(9));
     }
