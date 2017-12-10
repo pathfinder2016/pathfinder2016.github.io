@@ -1,4 +1,4 @@
-package week_005_binary_tree;
+package week_005_binary_tree.binary_search_tree;
 
 public class Node {
     public Object data;

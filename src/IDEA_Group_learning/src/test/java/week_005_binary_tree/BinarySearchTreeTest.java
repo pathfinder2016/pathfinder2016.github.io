@@ -2,6 +2,8 @@ package week_005_binary_tree;
 
 import junit.framework.Assert;
 import org.junit.Test;
+import week_005_binary_tree.binary_search_tree.BinarySearchTree;
+import week_005_binary_tree.binary_search_tree.Node;
 
 public class BinarySearchTreeTest {
     @Test

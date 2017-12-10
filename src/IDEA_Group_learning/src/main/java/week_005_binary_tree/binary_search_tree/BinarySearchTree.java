@@ -1,22 +1,18 @@
-package week_005_binary_tree;
+package week_005_binary_tree.binary_search_tree;
 
 import data_structure.Stack;
 import exception.StackEmptyException;
-import sun.util.resources.cldr.ebu.CurrencyNames_ebu;
-import sun.util.resources.cldr.sr.CalendarData_sr_Cyrl_RS;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-import static java.lang.System.*;
 import static java.lang.System.out;
-import static java.lang.System.setOut;
 
-class BinarySearchTree<T extends Comparable<T>> {
-    Node root;
-    int nodeNum = 0;
+public class BinarySearchTree<T extends Comparable<T>> {
+    public Node root;
+    public int nodeNum = 0;
 
-    boolean insert(T i) {
+    public boolean insert(T i) {
         nodeNum++;
         if (root == null) {
             root = new Node(i);
@@ -44,7 +40,7 @@ class BinarySearchTree<T extends Comparable<T>> {
         return true;
     }
 
-    boolean contains(T t) {
+    public boolean contains(T t) {
         Node currentNode = root;
         while (true) {
             if (currentNode == null) {
@@ -61,7 +57,7 @@ class BinarySearchTree<T extends Comparable<T>> {
         }
     }
 
-    void pre_order_traversal_recursion_way(Node root) {
+    public void pre_order_traversal_recursion_way(Node root) {
         if (root == null) {
             return;
         }
@@ -116,7 +112,6 @@ class BinarySearchTree<T extends Comparable<T>> {
         2. 碰到为空，出栈
         3. 以此类推
      */
-
     private void mid_order_traversal_not_recursion_way(Node root) throws StackEmptyException {
         Stack<Node> stack = new Stack(100);
         Node currentNode = root;
