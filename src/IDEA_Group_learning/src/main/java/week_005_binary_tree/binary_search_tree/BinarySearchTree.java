@@ -53,7 +53,6 @@ public class BinarySearchTree<T extends Comparable<T>> {
             } else {
                 currentNode = currentNode.right;
             }
-
         }
     }
 
@@ -128,7 +127,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
     }
 
     private void level_order(Node root){
-        Queue<Node> queue = new LinkedList();
+        Queue<Node> queue = new LinkedList<>();
         Node currentNode = root;
         queue.add(currentNode);
 
@@ -170,7 +169,6 @@ public class BinarySearchTree<T extends Comparable<T>> {
         binarySearchTree.mid_order_traversal_not_recursion_way(root);
 //        System.out.println();
 //        binarySearchTree.post_order_traversal_not_recursion_way(root);
-
         out.println("\n层次遍历");
         binarySearchTree.level_order(root);
     }

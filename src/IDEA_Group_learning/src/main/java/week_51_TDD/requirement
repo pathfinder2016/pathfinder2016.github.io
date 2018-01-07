@@ -1,0 +1,32 @@
+1. 拆task
+- task 1
+(1) given a string "Work at OOCL"
+(2) when run the method
+(3) then output
+        Work    1
+        at      1
+        OOCL    1
+
+- task 2
+(1) given a string "Work at OOCL OOCL world"
+(2) when run the method
+(3) then output
+        OOCL    2
+        Work    1
+        at      1
+        world   1
+
+- task 3
+(1) given a string "Work        at OOCL         OOCL world"
+(2) when run the method
+(3) then output
+        OOCL    2
+        Work    1
+        at      1
+        world   1
+
+- task 4
+(1) given a string "  "
+(2) when run the method
+(3) then output ""
+
