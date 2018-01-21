@@ -1,0 +1,22 @@
+@startuml
+
+package "DSH_PRS" {
+HTTP - [Controller]
+[Controller]
+}
+
+package "DSH_DOM" {
+RMI - [Service]
+
+[Service]-->[Interface]
+[Controller] --> RMI
+}
+
+
+package "Framework" {
+  [Interface] -->[Transaction]
+}
+
+
+
+@enduml
