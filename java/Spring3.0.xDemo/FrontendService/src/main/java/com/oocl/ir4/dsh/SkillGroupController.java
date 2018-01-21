@@ -1,5 +1,6 @@
 package com.oocl.ir4.dsh;
 
+import com.oocl.ir4.dsh.service.MikeLog;
 import com.oocl.ir4.dsh.service.SkillGroupService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,6 +14,7 @@ public class SkillGroupController {
     @Autowired
     private SkillGroupService skillGroupService;
 
+    @MikeLog
     @RequestMapping(value = "/OOCL", method = RequestMethod.GET)
     @ResponseBody
     public String helloWorld() {
